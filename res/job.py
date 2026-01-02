@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+import subprocess #新增
+import sys #新增
+subprocess.check_call([sys.executable,"-m","pip","install","requests"])  #xinzeng
+
 import requests
 import os
 import time
