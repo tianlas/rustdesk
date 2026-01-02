@@ -124,7 +124,7 @@ jobs:
        else
         pip3 install requests
        fi
-      shell: bash
+      shell: pwsh
     
     - name: Install prerequisites
       shell: bash
