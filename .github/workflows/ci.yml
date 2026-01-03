@@ -109,22 +109,6 @@ jobs:
       uses: actions/checkout@v4
       with:
         submodules: recursive
-
-    #新增代码
-    - name: Set up Python 3.x
-      uses: actions/setup-python@v5
-      with: 
-       python-version: '3.x'
-
-    #新增代码
-    - name: Instsall Python requests dependency
-      run: |
-       if [["$RUNNER_OS" == "Windows"]];then
-        pip install requests
-       else
-        pip3 install requests
-       fi
-      shell: pwsh
     
     - name: Install prerequisites
       shell: bash
